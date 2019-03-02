@@ -1,0 +1,16 @@
+div.front, div.back {
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 16px; /* line height is based on this size in Anki for some reason, so start with the smallest size used */
+}
+
+span.tiny {font-size: 16px;}
+span.small {font-size: 24px;}
+span.medium {font-size: 32px;}
+span.large {font-size: 96px;}
+span.italic {font-style: italic;}
+
+.win .japanese {font-family: "Meiryo", "MS Mincho";}
+.mac .japanese {font-family: "Hiragino Mincho Pro";}
+.linux .japanese {font-family: "Kochi Mincho";}
+.mobile .japanese {font-family: "Motoya L Cedar", "Motoya L Maru", "DroidSansJapanese", "Hiragino Mincho ProN";}

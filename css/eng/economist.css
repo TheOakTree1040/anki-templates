@@ -1,0 +1,54 @@
+.card {
+    font-family: Georgia, 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
+}
+
+.audio {
+    text-align: center;
+}
+
+.word {
+    display: none;
+    font-family: 'Sans Forgetica', sans-serif;
+}
+
+.dotted-hr {
+    height: 1px;
+    border: none;
+    border-top: 1px dashed #0066CC;
+    background-color: #ffffff;
+}
+
+fieldset.a {
+    display: none !important;
+}
+
+div#vUi,
+span.b.c:nth-of-type(2),
+div.m {
+    display: none !important;
+}
+
+div#v5A,
+div.a.g.d {
+    display: none !important;
+}
+
+hr.s {
+    display: none !important;
+}
+
+div.h {
+    margin-bottom: 3px !important;
+}
+
+div.v_ {
+    margin-top: 0 !important;
+}
+
+div.a.i {
+    border: 1px solid #E4E2F1;
+    border-radius: 6px;
+    padding: 4px 3px;
+    margin: 4px 0;
+    font-size: 95%;
+}

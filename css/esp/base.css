@@ -1,0 +1,42 @@
+@import url(../base.css);
+
+.card {
+    text-align: center;
+
+    background: url(../../img/esp-place-alcazar-palace.jpg) center center fixed;
+    background-size: cover;
+}
+
+.section {
+    background-color: rgba(255, 255, 255, 0.95);
+
+    color: #414141;
+    font-family: "Courier New", monospace;
+    font-size: 13px;
+    
+    margin-top: 70px;
+}
+
+.esp-item {
+    font-size: 2em;
+    font-weight: bold;
+
+    text-align: center;
+    padding: 10px 0;
+}
+
+.esp-expr {
+    font-family: 'Sans Forgetica', sans-serif;
+    padding: 10px 0;
+}
+
+hr {
+    border-top: 1px solid #bbbbbb;
+}
+
+.POS {
+    background-color: #ffa500;
+    color: white;
+    border-radius: 10px;
+    padding-left: 10px;
+}

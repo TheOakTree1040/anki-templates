@@ -1,0 +1,26 @@
+@import url("../base.css");
+
+@media only screen and
+(min-width: 600px) {
+    .card {
+        text-align: center;
+        background: url(../../img/gen-pattern-1.jpg) no-repeat center fixed;
+        background-size: cover;
+    }
+}
+
+.section {
+    color: #414141;
+    background-color: rgba(255,255,255,0.95);
+    font-family: "Courier New", monospace;
+}
+
+.gen-item {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.section {
+    margin-top: 70px;
+}

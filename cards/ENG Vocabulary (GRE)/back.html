@@ -1,0 +1,39 @@
+{{FrontSide}}
+<div class="section">
+    <div id="def" class="eng-item">{{Definition}}</div>
+    {{#Definition 2}}
+    <hr><div id="def2" class="eng-item">{{Definition 2}}</div>
+    {{/Definition 2}}
+    {{#Memorization}}
+    <hr><div id="mem" class="eng-item">{{Memorization}}</div>
+    {{/Memorization}}
+    {{#Memorization 2}}
+    <hr><div id="mem2" class="eng-item">{{Memorization 2}}</div>
+    {{/Memorization 2}}
+</div>
+<script type="text/javascript">
+    Element.prototype.remove = function () {
+        this.parentElement.removeChild(this);
+    }
+    NodeList.prototype.remove = HTMLCollection.prototype.remove = function () {
+        for (var i = this.length - 1; i >= 0; i--) {
+            if (this[i] && this[i].parentElement) {
+                this[i].parentElement.removeChild(this[i]);
+            }
+        }
+    }
+    if ("{{Definition 2}}" === "<br>無") {
+        document.getElementById("def2").remove();
+    } else {
+        var def2 = document.getElementById("def2");
+        var inner = def2.innerHTML;
+        inner = inner.substring(4); // removing the line break <br> requires the string to be cut before the 5th char (index 4)
+        def2.innerHTML = inner;
+    }
+    if ("{{Memorization}}" == "無") {
+        document.getElementById("mem").remove();
+    }
+    if ("{{Memorization 2}}" == "無") {
+        document.getElementById("mem2").remove();
+    }
+</script>

@@ -1,0 +1,13 @@
+@import url(base.css);
+
+#def {
+    padding-left: 3px; 
+    padding-top: 20px; 
+    font-weight: bold;
+}
+#def2 { color: purple; }
+#mem { color: teal; }
+#mem2 {
+    padding-bottom: 20px;
+    color: blue;
+}

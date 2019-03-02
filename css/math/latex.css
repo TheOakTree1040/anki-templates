@@ -1,0 +1,9 @@
+@import url(../base.css);
+
+.card {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+    background: url(../../img/gen-dark.jpg) no-repeat center fixed;
+    background-size: cover;
+}

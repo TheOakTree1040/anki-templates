@@ -1,0 +1,6 @@
+@import url(../base.css);
+
+.card {
+    background: url(../../img/gen-dark.jpg) no-repeat center center fixed;
+    background-size: cover;
+}

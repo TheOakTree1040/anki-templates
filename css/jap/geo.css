@@ -1,0 +1,19 @@
+.card {
+    font-size: 18px;
+    text-align: center;
+    color: #2211aa;
+    background-color: #f5f2eb;
+}
+
+@font-face {
+    font-family: myfont;
+    src: url('../../../_mspminchojis2004.otf');
+}
+
+.mystyle {
+    font-family: myfont;
+}
+
+.mac .mystyle {
+    font-family: "Noto Sans CJK JP";
+}

@@ -1,0 +1,12 @@
+@import url(base.css);
+.card {
+    text-align: center;
+    background: white;
+    
+    font-family: YOzAP;
+    font-size: 40px;
+}
+
+hr {
+    margin: 14px 12px;
+}

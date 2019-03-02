@@ -1,0 +1,41 @@
+div div {
+    padding: 0.5em;
+}
+
+.card {
+    font-family: Garamond, serif;
+    font-size: 24pt;
+    text-align: center;
+    color: black;
+    background-color: #fff;
+    line-height: 90%;
+    padding: 0;
+    margin: 0;
+}
+
+.small {
+    font-size: 0.7em;
+    line-height: 100%;
+}
+
+.verysmall {
+    font-size: 0.5em;
+    line-height: 100%;
+}
+
+.timestamp {
+    font-size: 0.3em;
+    color: grey;
+}
+
+header {
+    font-family: Avenir, Arial, arial, sans-serif;
+    background: #cde8fa;
+    color: grey;
+    font-size: 0.5em;
+    line-height: 2em;
+}
+
+.gray {
+    color: gray;
+}

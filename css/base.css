@@ -1,0 +1,140 @@
+/*
+Original template by: Huang, Author of ODH (Chrome extension)
+Modified by Zhenkai W.
+*/
+
+/*
+ * ===============GENERAL===============
+ */
+.card {
+    margin: 12px;
+    text-align: left;
+
+    background: url(../img/gen-hex.jpg) center center fixed;
+    background-size: cover;
+}
+
+.section {
+    background-color: rgba(255, 255, 255, 0.9);
+
+    color: #000;
+    font-family: "Segoe UI", Arial, "Microsoft Yahei", sans-serif;
+    font-size: 16px;
+
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.3), 0 0px 0px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+
+    margin: auto;
+    margin-bottom: 12px;
+    max-width: 500px;
+}
+
+.section-thin {
+    max-width: 400px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn ease-in 1;
+    animation-fill-mode: forwards;
+    animation-duration: 0.3s;
+}
+
+#first-section {
+    margin-top: 70px;
+}
+
+.audio img {
+    width: 64px;
+    height: 64px;
+    vertical-align: middle;
+}
+
+.audio {
+    margin-left: 5px;
+}
+
+hr {
+    border: 0;
+    margin: 0 12px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.dark-hr {
+    border-top: 1px solid #bbbbbb;
+}
+
+.darker-hr {
+    border-top: 1px solid #aaaaaa;
+}
+
+a:link {
+    color: #414141;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: rgba(0, 168, 168, 0.8);
+}
+
+.cloze {
+    font-weight: bold;
+    color: blue;
+}
+
+.nightMode .cloze {
+    color: lightblue;
+}
+
+.gen-item {
+    margin: 0 12px;
+    padding: 10px 0;
+}
+
+.bold-center {
+    text-align: center;
+    font-weight: bold;
+}
+
+.large-text {
+    font-size: 25px;
+}
+
+/*
+ * ===============FONTS===============
+ */
+@font-face {
+    font-family: "Sans Forgetica";
+    src: url(../fonts/sans-forgetica.ttf)
+}
+
+@font-face {
+    font-family: YOzAP;
+    src: url(../fonts/yoz.ttf);
+}
+
+@font-face {
+    font-family: YOzAb;
+    src: url(../fonts/yoz-bold.ttf);
+} 
+/*
+ * ===============MEDIA QUERIES===============
+ */
+@media only screen and
+(max-width: 600px) {
+    .card {
+        background: #7F7FD5;   /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(-30deg, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+}
