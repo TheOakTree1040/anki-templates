@@ -1,14 +1,26 @@
-{{FrontSide}}
+<div id="first-section" class="section">
+    <div id="eng-expr" class="eng-item">
+        {{Expression}}
+        <span class="audio">{{Audio}}</span>
+    </div>
+    {{#Reading}}
+        <hr>
+        <div id="eng-reading" class="eng-item">{{Reading}}</div>
+    {{/Reading}}
+</div>
 <div class="section">
     <div id="def" class="eng-item">{{Definition}}</div>
     {{#Definition 2}}
-    <hr><div id="def2" class="eng-item">{{Definition 2}}</div>
+        <hr>
+        <div id="def2" class="eng-item">{{Definition 2}}</div>
     {{/Definition 2}}
     {{#Memorization}}
-    <hr><div id="mem" class="eng-item">{{Memorization}}</div>
+        <hr>
+        <div id="mem" class="eng-item">{{Memorization}}</div>
     {{/Memorization}}
     {{#Memorization 2}}
-    <hr><div id="mem2" class="eng-item">{{Memorization 2}}</div>
+        <hr>
+        <div id="mem2" class="eng-item">{{Memorization 2}}</div>
     {{/Memorization 2}}
 </div>
 <script type="text/javascript">

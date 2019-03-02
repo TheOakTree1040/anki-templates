@@ -1,19 +1,6 @@
-<div class="section">
-    <div id="expr" class="item">{{Kanji}}<span id="opt"> &bull; {{Kana}}</span><span class="audio">{{Audio}}</span></div>
+<div id="first-section" class="section">
+    <div id="expr" class="jap-item">{{Kanji}}<span id="front-audio" class="audio">{{Audio}}</span></div>
     <div class="POS-container"><span class="POS">{{POS}}</span></div>
-</div>
-
-<div class="section">
-
-    <div class="item definition">{{English}}</div>
-    {{#2ndDef}}
-    <hr>
-    <div class="item">Alternative(s):
-        {{2ndDef}}</div>{{/2ndDef}}
-    {{#OtherDef}}
-    <hr>
-    <div class="item">Other Sense(s):
-        {{OtherDef}}</div>{{/OtherDef}}
 </div>
 <script type="text/javascript">
     Element.prototype.remove = function () {
@@ -27,6 +14,6 @@
         }
     }
     if ("{{Kana}}" === "{{Kanji}}") {
-        document.getElementById("opt").remove();
+        document.getElementById("front-audio").remove();
     }
 </script>

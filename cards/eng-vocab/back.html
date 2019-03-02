@@ -1,0 +1,46 @@
+<div id="first-section" class="section">
+        <div id="eng-expr" class="eng-item">
+            <a href="https://www.collinsdictionary.com/dictionary/english/{{text:Expression}}">
+                {{Expression}}
+            </a>
+            <span class="audio">{{Audio}}</span>
+        </div>
+        {{#Reading}}
+            <hr><div id="eng-reading" class="eng-item">{{Reading}}</div>
+        {{/Reading}}
+    </div>
+    
+    <div class="fade-in section">
+    {{^Definition 2}}
+        <div id="eng-def" class="eng-item">
+            {{Definition}}
+        </div>
+    {{/Definition 2}}
+    
+    {{#Definition 2}}
+        <hr>
+        <div id="eng-def" class="eng-item">
+            {{Definition 2}}
+        </div>
+    {{/Definition 2}}
+    
+    {{#Example}}
+        <hr>
+        <div id="eng-example" class="eng-item">
+            {{Example}}
+        </div>
+    {{/Example}}
+    
+    {{#Extras}}
+        <hr>
+        <div id="eng-extras" class="eng-item">
+            {{Extras}}
+        </div>
+    {{/Extras}}
+    
+    {{#Source}}
+        <div id="eng-expr-source">
+            <a href="{{Source}}">Source</a>
+        </div>
+    {{/Source}}
+</div>

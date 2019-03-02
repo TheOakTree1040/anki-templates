@@ -1,0 +1,36 @@
+<div id="first-section" class="section">
+    <div class="jap-item definition">{{English}}</div>
+    {{#2ndDef}}
+        <hr>
+        <div class="jap-item">Alternative(s):
+            {{2ndDef}}
+        </div>
+    {{/2ndDef}}
+    {{#OtherDef}}
+        <hr>
+        <div class="jap-item">Other Sense(s):
+            {{OtherDef}}
+        </div>
+    {{/OtherDef}}
+</div>
+
+<div class="section">
+    <div id="expr" class="jap-item">{{Kanji}}<span id="opt"> &bull; {{Kana}}</span><span class="audio">{{Audio}}</span></div>
+    <div class="POS-container"><span class="POS">{{POS}}</span></div>
+</div>
+
+<script type="text/javascript">
+    Element.prototype.remove = function () {
+        this.parentElement.removeChild(this);
+    }
+    NodeList.prototype.remove = HTMLCollection.prototype.remove = function () {
+        for (var i = this.length - 1; i >= 0; i--) {
+            if (this[i] && this[i].parentElement) {
+                this[i].parentElement.removeChild(this[i]);
+            }
+        }
+    }
+    if ("{{Kana}}" === "{{Kanji}}") {
+        document.getElementById("opt").remove();
+    }
+</script>
